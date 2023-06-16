@@ -36,6 +36,9 @@ feq (uint32_t,uint32_t);
 bool
 flt (uint32_t,uint32_t);
 
+bool
+fle (uint32_t,uint32_t);
+
 uint32_t
 h_fabs (uint32_t);
 

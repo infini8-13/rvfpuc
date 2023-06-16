@@ -1,8 +1,3 @@
-/*!
-  @file float.h
-  @brief 浮動小数点の扱いで使う諸々のutility
- */
-
 #pragma once
 
 #include <stdbool.h>
