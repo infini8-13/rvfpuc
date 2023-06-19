@@ -1,6 +1,6 @@
 /*!
   @file fle.c
-  @brief floating comparison- Less than or equal to
+  @brief Floating-point comparison - Less than or Equal
  */
 
 #include <stdint.h>
