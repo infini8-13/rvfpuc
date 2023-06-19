@@ -7,6 +7,6 @@ script:
 
 notifications:
   emails:
-    - masakiwaga@gmail.com
+
   on_success: always # default: change
   on_failure: always
