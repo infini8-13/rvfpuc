@@ -37,7 +37,7 @@ gen_test (void)
       bb[32] = '\0';
       cc[0]  = c ? '1' : '0';
       cc[1]  = '\0';
-      // 非正規化数とかはやらない
+      // no denormalized numbers
       if (isnormal (a.f) && isnormal((b.f)))
 	{
 	  printf ("%s\t%s\t%s\n",aa,bb,cc);

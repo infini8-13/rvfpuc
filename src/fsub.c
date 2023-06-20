@@ -25,7 +25,7 @@ ZLC (uint32_t a)
     }  
 }
 
-//! abs(a) > abs(b) の前提の元計算する.
+//! calculated based on the premise of abs(a) > abs(b)
 static uint32_t
 fsub_i (const uint32_t a,const uint32_t b)
 {

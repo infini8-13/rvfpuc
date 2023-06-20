@@ -32,7 +32,7 @@ void printFabs (uint32_t in)
     }
   aa[32] = '\0';
   cc[32] = '\0';
-  // 非正規化数とかはやらない
+  // no denormalized numbers
   if (isnormal (a.f))
     {
       if (!isnan (c.f))

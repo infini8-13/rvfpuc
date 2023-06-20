@@ -46,7 +46,7 @@ all_tests (void)
       aa[32] = '\0';
       bb[32] = '\0';
       cc[32] = '\0';
-      // 非正規化数とかはやらない
+      // no denormalized numbers
       if (isnormal (a.f) && isnormal (b.f))
 	{
 	  if (!isnan (c.f))

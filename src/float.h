@@ -15,9 +15,9 @@
 #define changeSign(S,N) ((S) << 31) | ((N) & 0x7fffffff)
 #define m_Nan 0xfff00000
 #define m_Inf 0xff800000
-//! binary access.AのNbit目を返す
+//! Binary access - Return N bits of A
 #define bin(A,N) (((A) >> (N)) & 1)
-//! binary arrayを返す.AのMからNbit目を返す
+//! Binary array - Return N bits from M to A
 #define bina(A,N,M) ((A & (((uint64_t)((uint64_t)1 << (N+1)) - 1))) >> (M))
 
 int32_t

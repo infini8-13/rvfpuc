@@ -23,7 +23,7 @@ union uint32_f
 
 
 //! exp & key (10bit) -> a (23bit) & b (23bit)
-// exp & key (13bit) -> 13bit & 23bitと全体で5bitしか変わらなかったのでmantissa返すようにした.
+// exp & key (13bit) -> 13bit & 23bit only changed 5bit in total, so mantissa was returned.
 uint64_t
 fsqrt_table (uint16_t key)
 {  
@@ -119,8 +119,8 @@ fsqrt (const uint32_t in)
   assert (!bin (m_a,25));
   assert (!bin (m_b,25));
 
-  //! @note 丸めを気にしなくてもtestを通るっぽいから丸めない
-  // 25 downto 0
+  //! @note Even if you don't care about rounding, it seems to pass the test, so don't round
+  // 25 down to 0
   const uint32_t sum = m_a + m_b;
   assert (!bin (sum,26));
 
