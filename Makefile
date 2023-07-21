@@ -1,3 +1,4 @@
+#make for all
 CC = gcc
 
 all: 
