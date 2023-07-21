@@ -1,12 +1,10 @@
-/*!
-  @file fsub.c
-  @brief floating subtruction
- */
+//floating subtraction
 
 #include <stdio.h>
 #include "fpu.h"
 #include "float.h"
 
+//Zero Leading Counter
 static int
 ZLC (uint32_t a)
 {
@@ -25,7 +23,7 @@ ZLC (uint32_t a)
     }  
 }
 
-//! calculated based on the premise of abs(a) > abs(b)
+//calculated based on the premise of abs(a) > abs(b)
 static uint32_t
 fsub_i (const uint32_t a,const uint32_t b)
 {

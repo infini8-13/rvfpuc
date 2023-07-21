@@ -1,11 +1,11 @@
 #include <stdint.h>
 #include <float.h>
-#include <math.h>
 
-float_t
-fneg (float_t a, float_t b)
+uint32_t
+fsgnj (uint32_t a, uint32_t b)
 {
-	return changeSign(getSign(b), a);
+    
+	return changeSign(getSign (b), a);
     
 }
 

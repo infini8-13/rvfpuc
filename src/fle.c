@@ -1,7 +1,4 @@
-/*!
-  @file fle.c
-  @brief Floating-point comparison - Less than or Equal
- */
+//Floating-point comparison - Less than or Equal
 
 #include <stdint.h>
 #include <stdbool.h>

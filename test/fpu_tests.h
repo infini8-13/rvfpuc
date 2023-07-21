@@ -46,9 +46,6 @@ char *
 i2fTest (void);
 
 char *
-i2fWholeTest (void);
-
-char *
 feqTest (void);
 
 char *
@@ -58,4 +55,4 @@ char *
 fabsTest (void);
 
 char *
-fnegTest (void);
+fsgnjnTest (void);

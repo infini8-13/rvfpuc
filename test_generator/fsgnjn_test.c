@@ -7,7 +7,7 @@
 #include <limits.h>
 
 extern uint32_t
-fneg (uint32_t a);
+fsgnjn (uint32_t a);
 
 union uint32_f
 {

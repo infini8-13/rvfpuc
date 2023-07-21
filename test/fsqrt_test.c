@@ -16,7 +16,6 @@ fsqrtTest (void)
       uint32_t a = i;
       uint32_t c = fsqrt(a);
 #define max(A,B) ((A) > (B) ? (A) : (B))
-      // 非正規化数は除く;
       if (getExp (a) == 0)
 	{
 	  continue;
@@ -25,7 +24,7 @@ fsqrtTest (void)
 	{
 	  continue;
 	}
-      mu_assert("special case does not passed!!\n", a != 0x3F800001 || c == 0x3F800000);
+      mu_assert("special case does not passed!!\n", a != 0x3F800001 || c == 0x3F800000); //1
 
       mu_assert ((sprintf
       		  (str,

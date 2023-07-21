@@ -1,4 +1,4 @@
-#include <stdint.h>
+d#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -26,7 +26,7 @@ fdivTest (void)
     {
       static char str[1000];
       float a = frand (), b = frand ();
-      // 非正規化数とかはやらない
+      //not for denormalised numbers
       if (fpclassify (a) != FP_NORMAL || fpclassify (b) != FP_NORMAL )
 	continue;
       float c = fdivAdapter (a, b);

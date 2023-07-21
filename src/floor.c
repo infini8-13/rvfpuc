@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "float.h"
 
+//f2i to lower integer
 uint32_t
 h_floor (uint32_t in)
 {

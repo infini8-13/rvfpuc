@@ -48,7 +48,7 @@ faddTest (void)
     {
       static char str[1000];
       float a = frand (), b = frand ();
-      // 非正規化数とかはやらない
+      //not for denormalised numbers
       if (fpclassify (a) != FP_NORMAL || fpclassify (b) != FP_NORMAL)
 	continue;
       float c = faddAdapter (a, b);

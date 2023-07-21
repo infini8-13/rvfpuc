@@ -1,8 +1,4 @@
-/*!
-  @file fpu.h
-  @brief simulation library for FPU
-*/
-
+//! @note FPU function simulation library
 #pragma once
 #include <stdint.h>
 #include <stdbool.h>
@@ -27,9 +23,6 @@ fsqrt (uint32_t in);
 uint32_t
 h_i2f (uint32_t);
 
-uint32_t
-h_floor (uint32_t);
-
 bool
 feq (uint32_t,uint32_t);
 
@@ -40,7 +33,4 @@ bool
 fle (uint32_t,uint32_t);
 
 uint32_t
-h_fabs (uint32_t);
-
-uint32_t
-fneg (uint32_t);
+fsgnjn (uint32_t);

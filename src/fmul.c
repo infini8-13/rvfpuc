@@ -1,8 +1,4 @@
-/*!
-  @file fmul.h
-  @brief floating multiply
-*/
-
+//floating multiply with rne
 #include "fpu.h"
 #include "float.h"
 #include <stdio.h>

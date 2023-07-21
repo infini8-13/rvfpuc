@@ -6,8 +6,6 @@
 #include "float.h"
 
 #define MAX 512
-
-
 struct a_b
 {
   uint16_t a;

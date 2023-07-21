@@ -1,8 +1,8 @@
 #include <stdint.h>
-#include <math.h>
+#include "float.h"
 
-float_t
-fsgnjn (float_t a, float_t b)
+uint32_t
+fsgnjx (uint32_t a, uint32_t b)
 {
 
 	return changeSign((getSign(a) ^ getSign(b)), a);

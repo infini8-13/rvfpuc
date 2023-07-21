@@ -1,11 +1,10 @@
 #include <stdint.h>
-#include <float.h>
-#include <math.h>
+#include "float.h"
 
-float_t
-fsgnjn (float_t a, float_t b)
+uint32_t
+fsgnjn (uint32_t a)
 {
-    switch (getSign (b)) {
+    switch (getSign (a)) {
     case 0:
 	return changeSign(1, a);
     default:

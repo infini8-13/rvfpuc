@@ -1,3 +1,4 @@
+//regularly used short fncs for floating op
 #pragma once
 
 #include <stdbool.h>
@@ -15,9 +16,9 @@
 #define changeSign(S,N) ((S) << 31) | ((N) & 0x7fffffff)
 #define m_Nan 0xfff00000
 #define m_Inf 0xff800000
-//! Binary access - Return N bits of A
+//Binary access - Return N bits of A
 #define bin(A,N) (((A) >> (N)) & 1)
-//! Binary array - Return N bits from M to A
+//Binary array - Return N bits from M to A
 #define bina(A,N,M) ((A & (((uint64_t)((uint64_t)1 << (N+1)) - 1))) >> (M))
 
 int32_t

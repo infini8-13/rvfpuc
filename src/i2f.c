@@ -2,6 +2,7 @@
 #include "float.h"
 #include <stdio.h>
 
+//Zero Leading Counter
 static int
 ZLC (uint32_t a)
 {

@@ -42,7 +42,7 @@ all_tests ()
   mu_run_test (feqTest);
   mu_run_test (fltTest);
   mu_run_test (fabsTest);
-  mu_run_test (fnegTest);  
+  mu_run_test (fsgnjnTest);  
   return 0;
 }
 

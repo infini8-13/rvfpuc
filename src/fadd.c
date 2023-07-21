@@ -1,12 +1,10 @@
-/*!
-  @file fadd.c
-  @brief floating addition
- */
+//floating addition
 
 #include <stdio.h>
 #include "fpu.h"
 #include "float.h"
 
+//Zero Leading Counter
 static int
 ZLC (uint32_t a)
 {
@@ -25,7 +23,7 @@ ZLC (uint32_t a)
     }  
 }
 
-// calculated based on the premise of abs(a) > abs(b)
+//calculated based on the premise of abs(a) > abs(b)
 static uint32_t
 fadd_i (const uint32_t a,const uint32_t b)
 {
@@ -128,7 +126,6 @@ uint32_t
 fadd (uint32_t a,uint32_t b)
 {
   uint32_t u_a = bina(a,30,0),u_b = bina(b,30,0);
-  // Step 1
   if ( u_a > u_b ) 
     {
       return fadd_i (a,b);
