@@ -18,10 +18,10 @@ i2fTest (void)
       a.s = i;
       static char str[1000];
       uint32_t c = h_i2f(a.u);
-#define max(A,B) ((A) > (B) ? (A) : (B))
+ #define max(A,B) ((A) > (B) ? (A) : (B))
       mu_assert ((sprintf
 		  (str,
-		   "test of i2f not passed!!\nexpected :%d\nreturned :%g\n%g %g %g",
+		   "test of i2f not passed!\nexpected :%d\nreturned :%g\n%g %g %g",
 		   a.s , i2f(c),i2f (c),i2f (c+1),i2f (c-1)), str),
 		 (isnan (i2f (c+1)) || fabs(i2f (c) - a.s) <= fabs(i2f (c+1) - a.s)) && 
 		 (isnan (i2f (c-1)) || fabs(i2f (c) - a.s) <= fabs(i2f (c-1) - a.s)));
