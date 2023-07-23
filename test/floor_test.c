@@ -30,6 +30,7 @@ floorTest (void)
 
 }
 
+//for testing across the whole UINT32 range
 char *
 floorWholeTest (void)
 {
