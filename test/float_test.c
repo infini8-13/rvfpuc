@@ -5,6 +5,7 @@
 #include "minunit.h"
 #include "float.h"
 
+//Sub units tests for functions in float.c
 static int
 getSignTestUnit (float test)
 {    
