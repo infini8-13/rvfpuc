@@ -1,7 +1,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "float.h"
-
+//FLT - Less Than - Used in fcmp in single precision FP.
+//Test written
 bool
 flt (uint32_t a,uint32_t b)
 {
