@@ -1,7 +1,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "float.h"
-
+//FEQ - Test added. 
 bool
 feq (uint32_t a,uint32_t b)
 {
