@@ -13,7 +13,7 @@ fsgnjnTest (void)
       static char str[1000];
       const uint32_t a = i;
       // const uint32_t b = i+1;
-      const uint32_t c = fsgnjn (a); //for simple testing fsgnjn () is considered with one input.
+      const int32_t c = fsgnjn (a); //for simple testing fsgnjn () is considered with one input.
 
       mu_assert ((sprintf
       		  (str,
