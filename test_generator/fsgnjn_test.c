@@ -15,14 +15,14 @@ union uint32_f
   float f;
 };
 
-void printFneg (uint32_t in)
+void printFsgnjn (uint32_t in)
 {
   union uint32_f a, c;
   char aa[33],cc[33];
   a.i = in;
   if (fpclassify (a.f) != FP_NORMAL)
     return;
-  c.i = fneg (a.i);
+  c.i = fsgnjn (a.i);
   if (fpclassify (c.f) != FP_NORMAL)
     return;
   for (int t = 0; t < 32;++t)
@@ -45,7 +45,7 @@ gen_test (void)
 {
   for (int i = 0; i < 2000000 ; i++)
     {
-      printFneg(rand () | rand () << 16);
+      printFsgnjn(rand () | rand () << 16);
     }
 }
 
