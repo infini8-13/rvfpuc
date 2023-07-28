@@ -1,3 +1,4 @@
+//helper function - absolute
 #include <stdint.h>
 #include "float.h"
 
